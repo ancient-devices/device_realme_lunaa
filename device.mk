@@ -69,3 +69,6 @@ $(call inherit-product, vendor/realme/lunaa/lunaa-vendor.mk)
 
 # Inherit Device Firmware
 $(call inherit-product-if-exists, vendor/firmware/lunaa/firmware.mk)
+
+# Camera
+$(call inherit-product-if-exists, vendor/realme/camera/realmecamera.mk)
