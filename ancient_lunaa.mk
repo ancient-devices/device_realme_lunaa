@@ -14,7 +14,10 @@ $(call inherit-product, device/realme/lunaa/device.mk)
 # Inherit some common Ancient stuff.
 $(call inherit-product, vendor/ancient/config/common_full_phone.mk)
 
+ANCIENT_OFFICIAL := true
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_DISABLE_POSTRENDER_CLEANUP := true
 EXTRA_UDFPS_ANIMATIONS := true
 
 PRODUCT_NAME := lineage_lunaa
